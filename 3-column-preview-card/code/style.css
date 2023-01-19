@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Big Shoulders Display', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(0, 0%, 95%);
+}
+
+/* container main */
+.container-main{
+    display: flex;
+    flex-direction: row;
+    width: 57rem;
+    height: 53%;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+/* flex box */
+.box{
+    width: 34%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* button */
+.button{
+    background-color: white;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.6rem;
+    transition-property: background;
+    transition-duration: 0.2s;
+}
+
+.button:hover{
+    background-color: transparent;
+    outline: 2px solid white;
+}
+
+/* box 1 */
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sedans .logo{
+    margin: 3rem;
+}
+
+.sedans h3{
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 3rem;
+    font-size: 40px;
+    margin-top: -1rem;
+}  
+
+.sedans p{
+    color: hsl(0, 0%, 100%, 0.75);
+    margin: 3rem;
+    margin-top: -1rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans .btn1 a{
+    font-family: 'Lexend Deca', sans-serif ;
+    color: hsl(31, 77%, 52%);
+    transition-property: color;
+    transition: 0.2s;
+}
+
+.sedans .btn1 a:hover{
+    color: #fff;
+}
+
+/* box 2  */
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs .logo{
+    margin: 3rem;
+}
+
+.suvs h3{
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 3rem;
+    font-size: 40px;
+    margin-top: -1rem;
+}  
+
+.suvs p{
+    color: hsl(0, 0%, 100%, 0.75);
+    margin: 3rem;
+    margin-top: -1rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.suvs .btn2 a{
+    font-family: 'Lexend Deca', sans-serif ;
+    color: hsl(184, 100%, 22%);
+    transition-property: color;
+    transition: 0.2s;
+}
+
+.suvs .btn2 a:hover{
+    color: #fff;
+}
+
+/* box 3  */
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury .logo{
+    margin: 3rem;
+}
+
+.luxury h3{
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 3rem;
+    font-size: 40px;
+    margin-top: -1rem;
+}
+
+.luxury p{
+    color: hsl(0, 0%, 100%, 0.75);
+    margin: 3rem;
+    margin-top: -1rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.luxury .btn3 a{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(179, 100%, 13%);
+    transition-property: color;
+    transition: 0.2s;
+}
+
+.luxury .btn3 a:hover{
+    color: #fff;
+}
+
+
+/* mobile vision */
+
+
+@media only screen and (max-width: 650px){
+
+    #body{
+        min-height: 100vh;
+    }
+
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sedans{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px
+    }
+
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
